@@ -18,3 +18,16 @@ func Contains(runeSlice []rune, check rune) (out bool) {
 	}
 	return
 }
+
+// IncrementRuneLooped increments "inc" times from "in" and loops between "min" to "max"
+func IncrementRuneLooped(min rune, max rune, in rune, inc int) (out rune) {
+	out = in + rune(inc)
+	overflow := out - max
+
+	for overflow > 0 {
+		out = min + overflow - 1
+		overflow = out - max
+	}
+
+	return
+}
