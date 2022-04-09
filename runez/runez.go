@@ -7,3 +7,14 @@ func Slice(start rune, end rune) (out []rune) {
 	}
 	return
 }
+
+// Contains check if the runeSlice contains a rune
+func Contains(runeSlice []rune, check rune) (out bool) {
+	for _, c := range runeSlice {
+		if c == check {
+			out = true
+			return
+		}
+	}
+	return
+}
