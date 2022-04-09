@@ -2,4 +2,4 @@
 
 ## Intro
 
-Library of functions for leetcode practice in Golang
+Library of functions for leetcode practice in Golang!
