@@ -9,10 +9,10 @@ import (
 
 func main() {
 	inputs := []string{
-		// " 9129as-di ",
-		// "-42",
-		// "0032",
-		// "words and 987",
+		" 9129as-di ",
+		"-42",
+		"0032",
+		"words and 987",
 		"9223372036854775808",
 	}
 
@@ -69,6 +69,10 @@ func myAtoi(in string) (out int) {
 			}
 
 			out = out*10 + int(c-'0')
+
+			if out > int(math.Pow(2, 31)) {
+				out = int(math.Pow(2, 31))
+			}
 		}
 	}
 
@@ -76,7 +80,6 @@ func myAtoi(in string) (out int) {
 		out = -1 * out
 	}
 
-	fmt.Println(out)
 	if out > int(math.Pow(2, 31))-1 {
 		out = int(math.Pow(2, 31)) - 1
 		return
