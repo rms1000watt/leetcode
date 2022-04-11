@@ -9,10 +9,11 @@ import (
 
 func main() {
 	inputs := []string{
-		" 9129as-di ",
-		"-42",
-		"0032",
-		"words and 987", // This should return 0 i guess
+		// " 9129as-di ",
+		// "-42",
+		// "0032",
+		// "words and 987",
+		"9223372036854775808",
 	}
 
 	for _, input := range inputs {
@@ -37,8 +38,12 @@ func myAtoi(in string) (out int) {
 		// fmt.Println("sign:", sign)
 
 		if state == stateTrimLeft {
-			if c != '-' && c != '+' && !Contains(integers, c) {
+			if c == ' ' {
 				continue
+			}
+
+			if c != '-' && c != '+' && !Contains(integers, c) {
+				return
 			}
 
 			if c == '+' {
@@ -71,12 +76,15 @@ func myAtoi(in string) (out int) {
 		out = -1 * out
 	}
 
+	fmt.Println(out)
 	if out > int(math.Pow(2, 31))-1 {
 		out = int(math.Pow(2, 31)) - 1
+		return
 	}
 
 	if out < -1*int(math.Pow(2, 31)) {
 		out = -1 * int(math.Pow(2, 31))
+		return
 	}
 
 	return
