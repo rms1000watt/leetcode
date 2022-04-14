@@ -42,7 +42,15 @@ func countPaths(n int, roads [][]int) (out int) {
 }
 
 func dfs(destination int, node Node, graph map[int][]*Node, stack []*Node) {
-	if node == nil
+	if node == nil {
+		return
+	}
+
+	stack = append(stack, node)
+
+	for _, node := range graph[node.Val] {
+
+	}
 
 	return
 }
