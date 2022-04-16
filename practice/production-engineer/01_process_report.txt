@@ -1,0 +1,17 @@
+REPORT: Thu Apr 14 22:13:59 PDT 2022
+handling vagrant@127.0.0.1 -p 2222
+root         760  0.0  0.9 1383628 37548 ?       Ssl  Mar24   2:40 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+vagrant  3039736  0.0  0.0   8616  3200 ?        Ss   22:14   0:00 bash -c ps aux | grep docker
+vagrant  3039738  0.0  0.0   8160   720 ?        S    22:14   0:00 grep docker
+handling vagrant@127.0.0.1 -p 2222
+root         760  0.0  0.9 1383628 37548 ?       Ssl  Mar24   2:40 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+vagrant  3039816  0.0  0.0   8616  3124 ?        Ss   22:14   0:00 bash -c ps aux | grep docker
+vagrant  3039818  0.0  0.0   8160   720 ?        S    22:14   0:00 grep docker
+handling vagrant@127.0.0.1 -p 2222
+root         760  0.0  0.9 1383628 37548 ?       Ssl  Mar24   2:40 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+vagrant  3039895  0.0  0.0   8616  3156 ?        Ss   22:14   0:00 bash -c ps aux | grep docker
+vagrant  3039897  0.0  0.0   8160   720 ?        S    22:14   0:00 grep docker
+handling vagrant@127.0.0.1 -p 2222
+root         760  0.0  0.9 1383628 37548 ?       Ssl  Mar24   2:40 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+vagrant  3039972  0.0  0.0   8616  3204 ?        Ss   22:14   0:00 bash -c ps aux | grep docker
+vagrant  3039974  0.0  0.0   8160   660 ?        S    22:14   0:00 grep docker
