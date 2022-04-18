@@ -9,4 +9,5 @@ The first file contains statistics about various dinosaurs. The second file cont
 Given the following formula, speed = ((STRIDE_LENGTH / LEG_LENGTH) - 1) * SQRT(LEG_LENGTH * g)
 Where g = 9.8 m/s^2 (gravitational constant)
 Write a program to read in the data files from disk, it must then print the names of only the bipedal dinosaurs from fastest to slowest.
+6. check if string is palindrome
 
